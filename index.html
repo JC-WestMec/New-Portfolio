@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Windows-Style Desktop</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- start desktop -->
     <div class="desktop" id="desktop">
-        <div class="icon" data-name="Documents">
-            <img src="https://via.placeholder.com/50" alt="Folder">
-            <p>Documents</p>
-        </div>
-        <div class="icon" data-name="Browser">
-            <img src="https://via.placeholder.com/50" alt="Browser">
-            <p>Browser</p>
-        </div>
-        <div class="icon" data-name="Music">
-            <img src="https://via.placeholder.com/50" alt="Music">
-            <p>Music</p>
-        </div>
+      <div class="icon" data-name="Documents">
+        <img src="./assets/folder.png" alt="Folder" />
+        <p>Documents</p>
+      </div>
+      <div class="icon" data-name="Browser">
+        <img src="./assets/chrome.png" alt="Browser" />
+        <p>Browser</p>
+      </div>
+      <div class="icon" data-name="Music">
+        <img src="./assets/spotify.png" alt="Music" />
+        <p>Music</p>
+      </div>
     </div>
+    <!-- end desktop -->
+
+    <!-- start taskbar -->
     <nav class="taskbar">
-        <div class="taskbar-left">
-            <div class="taskbar-item" id="startButton">
-                <img src="./assets/windows.png" alt="Start">
-            </div>
-            <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Search...">
-            </div>
+      <div class="taskbar-left">
+        <div class="taskbar-item" id="startButton">
+          <img src="./assets/windows.png" alt="Start" />
         </div>
-        <div class="taskbar-item">
-            <img src="https://via.placeholder.com/30" alt="Documents">
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search..." />
         </div>
-        <div class="taskbar-item">
-            <img src="https://via.placeholder.com/30" alt="Browser">
-        </div>
-        <div class="taskbar-item">
-            <img src="https://via.placeholder.com/30" alt="Music">
-        </div>
-        <div class="clock" id="clock"></div>
+      </div>
+      <div class="taskbar-item">
+        <img src="./assets/folder.png" alt="Documents" />
+      </div>
+      <div class="taskbar-item">
+        <img src="./assets/chrome.png" alt="Browser" />
+      </div>
+      <div class="taskbar-item">
+        <img src="./assets/spotify.png" alt="Music" />
+      </div>
+      <div class="clock" id="clock"></div>
     </nav>
+    <!-- end taskbar -->
     <div class="start-menu" id="startMenu">
-        <a href="#">Settings</a>
-        <a href="#">File Explorer</a>
-        <button onclick="changeBackground('yellow')">1</button>
-        <button onclick="changeBackground('red')">2</button>
-        <button onclick="changeBackground('green')">3</button>
-        <button onclick="changeBackground('blue')">4</button>
-        <a href="#">Shutdown</a>
+      <a href="#">Settings</a>
+      <a href="#">File Explorer</a>
+      <button onclick="changeBackground('yellow')">1</button>
+      <button onclick="changeBackground('red')">2</button>
+      <button onclick="changeBackground('green')">3</button>
+      <button onclick="changeBackground('blue')">4</button>
+      <a href="#">Shutdown</a>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
