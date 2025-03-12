@@ -7,15 +7,15 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-document.getElementById('startButton').addEventListener('click', function() {
+document.getElementById('startButton').addEventListener('click', function () {
     const startMenu = document.getElementById('startMenu');
     startMenu.style.display = startMenu.style.display === 'flex' ? 'none' : 'flex';
 });
 
-document.getElementById('searchInput').addEventListener('input', function() {
+document.getElementById('searchInput').addEventListener('input', function () {
     const query = this.value.toLowerCase();
     const icons = document.querySelectorAll('.icon');
-    
+
     icons.forEach(icon => {
         const name = icon.getAttribute('data-name').toLowerCase();
         if (name.includes(query)) {
@@ -33,6 +33,6 @@ function changeBackground(color) {
         'green': './assets/windows_bg_3.jpg',
         'blue': './assets/windows_bg_4.jpg'
     };
-    document.body.style.transition = 'background 0.5s ease-in-out';
+    document.body.style.transition = 'background 0.5s ease';
     document.body.style.background = `url('${backgrounds[color]}') no-repeat center center/cover`;
 }
